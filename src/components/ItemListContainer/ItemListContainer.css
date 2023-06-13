@@ -1,0 +1,15 @@
+.ItemsContainer {    
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 10rem;
+    border-radius: 5%;
+    background: radial-gradient(circle, rgba(129,126,126,1) 0%, rgba(255,255,255,1) 100%);
+}
+.ItemsContainerProductos {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 35rem;
+    background: radial-gradient(circle, rgba(178,200,192,1) 0%, rgba(0,0,0,0.6783088235294117) 100%);
+    border-radius: 2rem;
+}
+

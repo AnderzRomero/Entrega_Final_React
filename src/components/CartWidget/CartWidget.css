@@ -1,0 +1,16 @@
+.imgCarrito {
+    width: 4.5rem;
+}
+
+.numeroCarrito {
+    background-color: #242222dc;
+    border-radius: 20%;
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.btnCarrito {
+    padding: 0 2rem;
+    cursor: pointer;
+}
