@@ -5,7 +5,7 @@ import { collection, addDoc } from "firebase/firestore"
 import './Checkout.css';
 
 const Checkout = () => {
-    const { carrito, vaciarCarrito } = useContext(CarritoContext);
+    const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
     const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [telefono, setTelefono] = useState("");
@@ -34,7 +34,7 @@ const Checkout = () => {
 
         const orden = {
             items: carrito.map(producto => ({
-                id: producto.item.id,                
+                id: producto.item.id,
                 nombre: producto.item.nombre,
                 cantidad: producto.cantidad,
             })),
@@ -57,19 +57,24 @@ const Checkout = () => {
             })
 
     }
+
     return (
         <div>
             <h2>Checkout</h2>
             <form onSubmit={manejadorSubmit}>
 
                 {carrito.map(producto => (
-                    <div key={producto.item.id}>                        
+                    <div key={producto.item.id}>
                         <p> {producto.item.nombre} x {producto.cantidad} </p>
-                        <p>Precio: $ {producto.item.precio} </p>                       
+                        <p>Precio Unidad: $ {producto.item.precio} </p>
+                        <p>Precio total: $ {producto.item.precio*producto.cantidad} </p>
                         <hr />
-                        
                     </div>
                 ))}
+                
+                <h3>Cantidad Final: {cantidadTotal} Productos</h3>   
+                <h3>Total de la Compra: ${total} </h3>
+
                 <hr />
 
                 <div>
