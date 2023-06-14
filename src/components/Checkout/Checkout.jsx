@@ -1,7 +1,8 @@
-import { useState, useEffect, useContext } from "react"
+import { useState, useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../../services/config"
 import { collection, addDoc } from "firebase/firestore"
+import './Checkout.css';
 
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -33,7 +34,7 @@ const Checkout = () => {
 
         const orden = {
             items: carrito.map(producto => ({
-                id: producto.item.id,
+                id: producto.item.id,                
                 nombre: producto.item.nombre,
                 cantidad: producto.cantidad,
             })),
@@ -62,10 +63,11 @@ const Checkout = () => {
             <form onSubmit={manejadorSubmit}>
 
                 {carrito.map(producto => (
-                    <div key={producto.item.id}>
+                    <div key={producto.item.id}>                        
                         <p> {producto.item.nombre} x {producto.cantidad} </p>
-                        <p>Precio: $ {producto.item.precio} </p>
+                        <p>Precio: $ {producto.item.precio} </p>                       
                         <hr />
+                        
                     </div>
                 ))}
                 <hr />

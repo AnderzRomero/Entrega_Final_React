@@ -16,19 +16,19 @@ const NavBar = () => {
                 <nav className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink to={`/categoria/3`}>Boards</NavLink>
+                            <NavLink activeClassName="active" to={`/categoria/3`}>Boards</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={`/categoria/2`}>Portatiles Gamers</NavLink>
+                            <NavLink activeClassName="active" to={`/categoria/2`}>Portatiles Gamers</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to={`/categoria/4`}>Perifericos</NavLink>
+                            <NavLink activeClassName="active" to={`/categoria/4`}>Perifericos</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to={`/categoria/1`}>Cajas</NavLink>
+                            <NavLink activeClassName="active" to={`/categoria/1`}>Cajas</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to={`/categoria/5`}>Monitores</NavLink>
+                            <NavLink activeClassName="active" to={`/categoria/5`}>Monitores</NavLink>
                         </li>
                     </ul>
                 </nav>

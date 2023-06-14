@@ -1,7 +1,7 @@
 .cardProducto {
-    background: radial-gradient(circle, rgba(178,200,192,1) 0%, rgba(0,0,0,0.6783088235294117) 100%);
+    background: radial-gradient(circle, rgba(178, 200, 192, 1) 0%, rgba(0, 0, 0, 0.6783088235294117) 100%);
     border-radius: 10px;
-    width: 15rem;
+    width: 17rem;
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .imgProducto {
-    width: 150px;
+    width: 200px;
     object-fit: contain;
 }
 
@@ -22,4 +22,24 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    padding-left: 12px;
+}
+
+.btnProducto:hover {
+    background-color: #20555c;
+    color: white;
+}
+
+.precio {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.Udisponibles {
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.tituloCard {
+    font-size: 30px;
 }

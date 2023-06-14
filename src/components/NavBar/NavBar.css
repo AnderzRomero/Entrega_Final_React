@@ -8,6 +8,7 @@
 }
 
 li {
+    display: inline-block;
     margin: 0 2rem;
     cursor: pointer;
     border-radius: 15rem;

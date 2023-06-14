@@ -1,12 +1,12 @@
 button {
-    background-color: rgb(35, 102, 102);
+    background-color: #236666;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 5px;
     cursor: pointer;
 }
@@ -15,4 +15,18 @@ p {
     font-size: 24px;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+}
+.numContador {
+    background-color: black;
+    border-radius: 30%;
+    padding: 1rem;
+    margin: 0 10px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
 }
