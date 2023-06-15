@@ -1,5 +1,5 @@
 .cardProducto {
-    background: radial-gradient(circle, rgba(178, 200, 192, 1) 0%, rgba(0, 0, 0, 0.6783088235294117) 100%);
+    background: radial-gradient(circle, rgba(50, 96, 135) 0%, rgba(0, 0, 0, 0.6783088235294117) 100%);
     border-radius: 10px;
     width: 17rem;
     padding: 1rem;
@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .imgProducto {
@@ -15,7 +16,6 @@
 }
 
 .btnProducto {
-    background-color: #373d20;
     color: white;
     font-size: 1.2rem;
     width: 8rem;
@@ -26,8 +26,8 @@
 }
 
 .btnProducto:hover {
-    background-color: #20555c;
-    color: white;
+    text-decoration: underline;
+    color: #d7dce0;
 }
 
 .precio {
@@ -42,4 +42,11 @@
 
 .tituloCard {
     font-size: 30px;
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    color: white;
+    margin: 10px auto;
 }

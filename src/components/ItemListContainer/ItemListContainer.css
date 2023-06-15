@@ -1,15 +1,16 @@
 .ItemsContainer {    
     text-align: center;
     padding: 1rem;
-    margin: 1rem 10rem;
+    margin: 1rem 5rem;
     border-radius: 5%;
-    background: radial-gradient(circle, rgba(129,126,126,1) 0%, rgba(255,255,255,1) 100%);
+    font-weight: 700;
+    color: #294f6f;
 }
 .ItemsContainerProductos {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
-    margin: 1rem 35rem;
-    background: radial-gradient(circle, rgba(178,200,192,1) 0%, rgba(0,0,0,0.6783088235294117) 100%);
+    margin: 1rem 19rem;
     border-radius: 2rem;
+    color: #294f6f;
 }
 

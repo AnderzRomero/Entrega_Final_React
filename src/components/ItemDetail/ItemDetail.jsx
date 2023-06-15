@@ -22,14 +22,16 @@ const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
   return (
     <div className='contenedorItem'>
       <img src={img} alt={nombre} />
-      <h2>{nombre} </h2>
-      <p>{descripcion}</p>
-      <h3>Precio: $ {precio} </h3>
-      <h3>Unidades Disponibles: {stock} </h3>
-      <h3> ID: {id} </h3>
-      {
-        agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
-      }
+      <div className='conteDescrip'>
+        <h2 className='title'>{nombre} </h2>
+        <p className='descrip'>{descripcion}</p>
+        <h3 className='parraf'>Precio: $ {precio} </h3>
+        <h3 className='parraf'>Unidades Disponibles: {stock} </h3>
+        <hr className='hr'/>
+        {
+          agregarCantidad > 0 ? (<Link to="/cart"> Ir al Carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+        }
+      </div>
     </div>
   )
 }

@@ -1,6 +1,5 @@
 .bg-NavBar {
-    background: rgb(64, 74, 74);
-    background: radial-gradient(circle, rgba(64, 74, 74, 1) 0%, rgba(80, 98, 98, 1) 20%, rgba(107, 147, 147, 1) 50%, rgba(184, 196, 196, 1) 80%, rgba(202, 221, 219, 1) 85%, rgba(255, 255, 255, 1) 91%);
+   background: #326087;
 }
 
 .imgLogo {
@@ -9,17 +8,22 @@
 
 li {
     display: inline-block;
-    margin: 0 2rem;
+    margin: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 15rem;
-    padding: 0.3rem;
-    color: #fff;
 }
 
-li:hover {
-    background-color: rgba(31, 32, 32, 0.795);
+li a {
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    color: white;    
 }
 
 .container-fluid {
     width: 70% !important;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
 }
