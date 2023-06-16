@@ -1,7 +1,7 @@
 button {
-    background-color: #326087;
+    /* background-color: #326087;     */
     border: none;
-    color: white;
+    /*  */
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -33,6 +33,9 @@ p {
 .btnCont {
     font-size: 3rem;
     padding: 0;
+    background-color: #326087;
+    color: white;
+
 }
 
 .btnAgregar {
