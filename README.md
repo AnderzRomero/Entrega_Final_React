@@ -2,9 +2,9 @@
 Este es un proyecto de ecommerce básico que se utiliza para el curso de React. La aplicación permite ver una lista de productos de tecnologia y realizar compras en línea. Los productos y las órdenes de compra se almacenan en Firebase.
 
 ## Tecnologías utilizadas
-- React + Vite
-- React Router
-- Firebase
+- React + Vite   ---npm install 
+- React Router ---npm install react-router-dom
+- Firebase  ---npm install firebase
 
 ## Funcionalidades
 - Ver una lista de productos disponibles

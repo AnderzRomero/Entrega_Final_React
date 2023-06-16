@@ -2,6 +2,7 @@ import { useState, useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../../services/config"
 import { collection, addDoc } from "firebase/firestore"
+import { Link } from 'react-router-dom'
 import './Checkout.css';
 
 const Checkout = () => {
@@ -106,7 +107,7 @@ const Checkout = () => {
                     error && <p style={{ color: "red" }}> {error} </p>
                 }
 
-                <button type="submit"> Finalizar Orden </button>
+                <button className="" type="submit"> Finalizar Orden </button>
 
                 {
                     ordenId && (

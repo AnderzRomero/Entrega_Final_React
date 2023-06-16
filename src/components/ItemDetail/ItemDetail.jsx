@@ -15,8 +15,8 @@ const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad);
 
-    const item = { id, nombre, precio };
-    agregarProducto(item, cantidad);
+    const item = { id, nombre, precio, img };
+    agregarProducto(item, cantidad, img);
   }
 
   return (
@@ -29,7 +29,7 @@ const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
         <h3 className='parraf'>Unidades Disponibles: {stock} </h3>
         <hr className='hr'/>
         {
-          agregarCantidad > 0 ? (<Link to="/cart"> Ir al Carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+          agregarCantidad > 0 ? (<Link className='miBtn miBtn-white miBtn-animate' to="/cart"> Ir al Carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
         }
       </div>
     </div>
