@@ -58,6 +58,12 @@ a {
     color: white;
 }
 
+.miBtn-black {
+    background-color: white;
+    color: #266e77;
+}
+
+
 .miBtn::after {
     content: "";
     display: inline-block;
@@ -73,6 +79,10 @@ a {
 
 .miBtn-white::after {
     background-color: #266e77;
+}
+
+.miBtn-black::after {
+    background-color: white;
 }
 
 .miBtn:hover::after {
