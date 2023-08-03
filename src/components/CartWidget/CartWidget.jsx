@@ -8,7 +8,7 @@ const CartWidget = () => {
 
     const totalCantidad = carrito.reduce((total, producto) => total + producto.cantidad, 0);
 
-    const imgCarrito = "../src/assets/carritosf.png";
+    const imgCarrito = "/img/carritosf.png";
 
     return (
 
