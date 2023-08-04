@@ -3,7 +3,7 @@ import CartWidget from '../CartWidget/CartWidget'
 import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
-    const imgLogo = "/img/HeroSystems.png"
+    const imgLogo = "src/assets/HeroSystems.png"
     return (
         <header className="navbar navbar-expand-lg bg-NavBar">
             <div className="container-fluid">
